@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="2"
+    tools:context=".DetallesActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnAtrasDetalles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_rounded"
+            android:text="ATRAS"
+            android:textColor="#000" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/ivFotoDetalle"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.406"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="56dp" />
+
+        <ImageView
+            android:id="@+id/circuloNumero"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/ivFotoDetalle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="95dp"
+            android:src="@drawable/circulonumero" />
+
+        <TextView
+            android:id="@+id/circuloEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="107dp"
+            android:text="28"
+            android:textColor="#000"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_rounded"
+            app:layout_constraintHorizontal_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+
+            android:id="@+id/tvNombreDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:ignore="MissingConstraints"
+            tools:text="@string/nombre" />
+
+        <TextView
+            android:id="@+id/tvApellidoDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="80dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvNombreDetalle"
+            tools:text="@string/apellido" />
+
+
+        <TextView
+            android:id="@+id/tvEdadDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="110dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:ignore="MissingConstraints"
+            tools:text="@string/edad" />
+
+        <TextView
+            android:id="@+id/tvFechaIngresoDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="27dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:ignore="MissingConstraints"
+            tools:text="@string/fechaIngreso" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/button_rounded"
+            app:layout_constraintHorizontal_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvDepartamentoDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="160dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:text="@string/departamento" />
+
+
+        <TextView
+            android:id="@+id/tvPuestoDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="200dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:text="@string/puesto" />
+
+        <TextView
+            android:id="@+id/tvTareasDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="240dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:ignore="MissingConstraints"
+            tools:text="@string/tareas" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
